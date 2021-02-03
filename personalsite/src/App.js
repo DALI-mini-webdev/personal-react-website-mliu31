@@ -1,13 +1,13 @@
 import './App.css';
-import penguin from './images/penguin.gif'
+import penguin from './images/penguin.gif'; 
+import Navbar from './components/navbar/Navbar';
+import './App.css'; 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>issues with github cloning and pushing after i'd finished the assignment; ended up overwriting my original files and worked with emma trying to fix it</p>
-        <p>however, unable to retrieve deleted files</p>
-
+        <Navbar />
         <h1>Megan Liu</h1>
 
         <h3 className="italicize">~about me~</h3>
@@ -40,7 +40,7 @@ function App() {
 
             </li>
           </ul>
-        </div>
+        </div> 
         <img src={penguin} alt="penguin"/>
         <a rel="noreferrer" target="_blank" href="https://theuselessweb.com/">the useless web</a>
       </header>
