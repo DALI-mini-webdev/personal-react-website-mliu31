@@ -30,7 +30,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 2em 4em; 
+  padding: 0.5em 4em; 
 }
 
 .App-link {
@@ -46,10 +46,71 @@
   }
 }
 
+/* my css */
 img { 
   width: 20%; 
+  margin: 3em; 
+}
+
+h2 { 
+  padding: 1em; 
+}
+
+h5 { 
+  /* padding: 2em 0 0.5em 0;  */
+  text-decoration: underline; 
+  font-weight: normal; 
+  font-size: 1.1em; 
 }
 
 a { 
-  color: #6e83ad
+  color: #6e83ad;
+  text-decoration: none; 
+  font-size: 1.25em; 
+  padding: .5em; 
+}
+/* unvisited link 
+ a:link {
+}
+
+ visited link 
+a:visited {
+  color: #6e83ad;
+  text-decoration: none; 
+} */
+
+/* mouse over link */
+a:hover {
+  color: #89a2d4;
+  text-decoration: none; 
+}
+
+/* selected link */
+a:active {
+  color: #4b5975;
+  text-decoration: none; 
+}
+
+div ul { 
+  list-style: none; 
+  text-decoration: none; 
+  margin: .25em 0 1.5em 0
+}
+
+
+.classcontainer { 
+  border: .05em solid white; 
+  padding: .5em 1em;
+  margin: .5em;  
+}
+
+.classcontainer p { 
+  font-size: 1.25em; 
+  line-height: 1.5em; 
+}
+
+.classcontainer button { 
+  font-size: .75em; 
+  padding: .2em;
+  margin: .3em;  
 }
