@@ -51,6 +51,7 @@ class Coursework extends Component {
             courses: this.state.courses.set(this.setState.courseId, courseData), 
             courseId: this.state.courseId + 1
         })
+        console.log("COURSE ID " + this.state.courseId)
     }
 
     delete = (id) => { 
@@ -80,9 +81,9 @@ class Coursework extends Component {
             }
         )
 
-        // trying to make "previously recommended courses" conditional based upon courseId 
-        // var prevSuggestions = (this.state.courseId > 0) ? 
-        // <h2>previously recommended courses</h2>: <p></p>
+        // "previously recommended courses" conditional after added at least one course (but if delete it, "previously recommended courses" is still there--bug to fix) 
+        var prevSuggestions = (this.state.courseId > 0) ? 
+        <h2>previously recommended courses</h2>: <p></p>
 
         return (
             <div>
@@ -103,7 +104,7 @@ class Coursework extends Component {
                     <br/>
                     <button onClick={this.saveCourseInfo}>Save</button>
                 </div>
-                <h2>Previously Recommended Courses</h2>
+                {prevSuggestions}
                 {allCourses}
 
             </div>

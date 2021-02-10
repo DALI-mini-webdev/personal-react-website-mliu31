@@ -36,7 +36,7 @@ function App() {
             <h5>other</h5>
             <ul>
               <li>eating chinese food</li>
-              <li>producitivity </li>
+              <li>productivity </li>
               <li>youtube</li>
               <li>juggling</li>
             </ul>
