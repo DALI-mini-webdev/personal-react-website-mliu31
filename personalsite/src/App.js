@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import './App.css';
 import Coursework from './components/coursework'
+import TriviaAPI from './components/api'; 
 
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
         </div>
 
         <Coursework />
+
+        <TriviaAPI />
 
         {/* <img src={penguin} alt="penguin"/>
         <a rel="noreferrer" target="_blank" href="https://theuselessweb.com/">the useless web</a> */}
