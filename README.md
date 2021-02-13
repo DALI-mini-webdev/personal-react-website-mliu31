@@ -8,3 +8,9 @@
 
 2/6/2021 
 ## added components for coursework 
+
+2/10/2021 
+## cleaned up code, added conditional for display of "previously recommended courses"
+
+2/13/2021 
+## added jeopardy api 
