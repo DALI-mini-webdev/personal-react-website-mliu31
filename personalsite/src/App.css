@@ -121,6 +121,25 @@ button {
   margin: .3em .3em .6em .3em;  
 }
 
+/* for trivia api  */
 .trivia { 
   width: 70%; 
+}
+
+/* for todo board (backend) */
+.todoPostStyle { 
+  width: 15rem; 
+  height: 15rem; 
+  background-color: yellow; 
+  color: #282c34; 
+  padding: 1em; 
+  margin: 1em; 
+}
+
+.allToDos { 
+  /* display: flex; 
+  justify-content: center;
+  align-items: center;  */
+  width: 50%;
+  margin: auto;  
 }

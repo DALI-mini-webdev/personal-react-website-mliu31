@@ -4,9 +4,13 @@ import Navbar from './components/navbar/Navbar';
 import './App.css';
 import Coursework from './components/coursework'
 import TriviaAPI from './components/api'; 
-
+import Firebase from './firestore/index';
+import ToDoBoard from './components/ToDoBoard'
 
 function App() {
+  console.log(Firebase); 
+  console.log(Firebase.db)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -44,9 +48,11 @@ function App() {
           </div>
         </div>
 
-        <Coursework />
+        {/* <Coursework /> */}
 
-        <TriviaAPI />
+        {/* <TriviaAPI /> */}
+
+        <ToDoBoard />
 
         {/* <img src={penguin} alt="penguin"/>
         <a rel="noreferrer" target="_blank" href="https://theuselessweb.com/">the useless web</a> */}
