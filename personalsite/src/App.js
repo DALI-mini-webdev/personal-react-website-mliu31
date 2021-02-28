@@ -16,8 +16,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         {/* <h1>Megan Liu</h1> */}
-
-      
+        
         <div>
           <h2>welcome to my crib</h2>
 

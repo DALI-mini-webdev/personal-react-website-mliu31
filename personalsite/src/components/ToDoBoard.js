@@ -34,10 +34,11 @@ saveNewToDo = () => {
         title: this.state.title, 
         task:this.state.task,
         id:this.state.id
-    }).then(ref => { 
-        console.group('document reference id', ref.id); 
+    }).then(ref => { // ref is individual doc in db
+        //id is unique id associated w each document in firestore, st u can reference which doc u r updating
+        console.log('document reference id', ref.id); 
         this.setState({ 
-            id:this.state.id + 1
+            id:this.state.id + 1 //local id 
         })
     }).catch((e) => { 
         console.log(e); 
@@ -50,17 +51,18 @@ fetchToDos = () => { //firebase functions
     .then(query => { 
         query.forEach(doc => { 
             console.log(doc.data()); 
-            todoList.push(doc.data()); 
+            todoList.push(doc.data());
         })
     })
     .then(() => { // update state 
         this.setState({ 
-        allToDos: todoList
+            allToDos: todoList
         })
     }).catch((e) => { 
+        console.log("error")
         console.log(e); 
     })
-}
+    }
 
     render() { 
         const allPosts = this.state.allToDos.map((todo) => { 
@@ -85,7 +87,7 @@ fetchToDos = () => { //firebase functions
                 <br/>
                 <button onClick={this.saveNewToDo}>save</button>
 
-                <div class="allToDos"> 
+                <div className="allToDos"> 
                     <button onClick={this.fetchToDos}>show my todo's</button>
                     {allPosts}
                 </div>

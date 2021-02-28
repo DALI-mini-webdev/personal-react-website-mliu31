@@ -5,16 +5,14 @@ import '../App.css'
 class ToDoPosting extends Component {
     constructor(props) {
         super(props);
-        // this.state = {
-
-        // }
+        this.state = {} // components don't need constructors unless defining state
     }
 
     // deletePost = () => { 
-    //     firebase.db.collection('todo').where('id', '==', id).get()
+    //     firebase.db.collection('todo').where('id', '==', id).get() // specifies which id you want
     //     .then(querySnapshot => { 
     //         querySnapshot.docs[0].ref.delete(); 
-    //     }).then(() +> { 
+    //     }).then(() => { 
     //         this.setState({ 
     //         //delete here; needs to rerender, needs redux 
     //         })
@@ -26,7 +24,7 @@ class ToDoPosting extends Component {
             <div className='todoPostStyle'>
                 <p>{this.props.title}</p>
                 <p>{this.props.task}</p>
-                <button onClick={this.deletePost}>delete</button>
+                {/* <button onClick={this.deletePost}>delete</button> */}
             </div>
         )
     };
